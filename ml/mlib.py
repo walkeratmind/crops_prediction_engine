@@ -14,7 +14,6 @@ class Model:
         for _ in range(n_folds):
             pass
 
-
     def error_rate(y_true, y_pred):
         return np.mean(y_true != y_pred)
 

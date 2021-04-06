@@ -14,7 +14,7 @@ def mode(labels):
     return Counter(labels).most_common(1)[0][0]
 
 class KNNClassifier:
-    def __init__(self, k=5, voting_option = mean):
+    def __init__(self, k=5, voting_option = mode):
         self.K = k
         self.voting_option = voting_option
 
@@ -23,7 +23,7 @@ class KNNClassifier:
         self.y = y
 
     def predict(self, X_test):
-        assert self.K <= len(self.X), "Expected k less than sample size"
+        assert self.K <= len(self.X), "Expected: k less than sample size"
 
         predictions = []
         distances = []

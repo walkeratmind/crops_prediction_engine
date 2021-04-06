@@ -1,4 +1,4 @@
 {
-    "python.pythonPath": "D:\\project_files\\python_projects\\py_env\\mlenv\\Scripts\\python.exe",
+    "python.pythonPath": "/home/codemonk/development_tools/pyenv/mlenv/bin/python",
     "python.formatting.provider": "black"
 }
